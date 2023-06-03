@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juega piedra, papel o tijera</title>
+    <!-- La siguiente línea vincula nuestra página con los estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="container-fluid bg-dark text-light">
+        <h1>Juega piedra, papel o tijera</h1>
+      </header>
+
+
+      <main class="container">
+                <div class="row">
+      <!-- Inicio de la columna -->
+          <div class="col-md-12 bg-primary text-light">
+            <!-- Contenido de la columna -->
+            <p>Este es un juego que te reta a piedra, papel o tijera. Para jugar elije una opción. El resultado se mostrará a continuación del formulario 👉</p>
+
+            <DIV>
+                <button type="button" class="btn btn-primary" id="boton1">Piedra</button>
+            </DIV>
+
+            <DIV>
+                <button type="button" class="btn btn-primary" id="boton2">Papel</button>
+            </DIV>
+
+            <DIV>
+                <button type="button" class="btn btn-primary" id="boton3">Tijeras</button>
+            </DIV>
+
+    <p id="alerta1" class="text-bg-warning text-uppercase lead"></p>
+          </div>
+        </div>
+      </main>
+      
+      
+      <footer class="bg-dark text-light py-4">
+        <p>Copyright &copy; 2023 Javier Villegas | Elaborado con HTML 5, Bootstrap 5.3.0 y Node 18.12.1.</p>
+      </footer>
+      
+
+<!-- La siguiente línea vincula nuestra página con los scripts necesarios para trabajar con Bootstrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="piedra-papel-tijera.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugando con un dado</title>
+    <!-- La siguiente línea vincula nuestra página con los estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="container-fluid bg-dark text-light">
+        <h1>Jugando con un dado</h1>
+      </header>
+
+
+      <main class="container">
+                <div class="row">
+      <!-- Inicio de la primera columna -->
+          <div class="col-md-6 bg-primary text-light">
+            <!-- Contenido de la primera columna -->
+            <p>Este es un juego que te reta a adivinar el número que saldrá en el dado virtual. Para jugar introduce un número en el campo de texto y presiona el botón Jugar. El resultado se mostrará a continuación del formulario 👉</p>
+  <form name="jugar1">
+    <div class="mb-3">
+      <label for="numero1" class="form-label">Número que deseas jugar</label>
+      <input type="number" class="form-control" id="numero1" name="numero1" placeholder="Ingresa un número del uno al seis" step="1" min="1" max="6" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="boton1">Jugar</button>
+    <p id="alerta1" class="text-bg-warning text-uppercase lead"></p>
+  </form>
+
+          </div>
+      <!-- Inicio de la segunda columna -->
+          <div class="col-md-6 bg-success text-dark" id="respuestas1">
+            <!-- Contenido de la segunda columna -->
+            
+          </div>
+        </div>
+      </main>
+      
+      
+      <footer class="bg-dark text-light py-4">
+        <p>Copyright &copy; 2023 Javier Villegas | Elaborado con HTML 5, Bootstrap 5.3.0 y Node 18.12.1.</p>
+      </footer>
+      
+
+<!-- La siguiente línea vincula nuestra página con los scripts necesarios para trabajar con Bootstrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="jugar-dados.js"></script>
+</body>
+</html>
